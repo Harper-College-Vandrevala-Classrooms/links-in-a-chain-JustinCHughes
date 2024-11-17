@@ -23,16 +23,26 @@ public class TestLinkedList {
 
   @Test
   public void testOne() {
-    assertEquals("red", theListOfTheLinkedVariety.get(0).color);
+    assertEquals("red", theListOfTheLinkedVariety.get(0).data.color);
   }
 
   @Test
   public void testTwo() {
-    assertEquals("blue", theListOfTheLinkedVariety.get(1).color);
+    assertEquals("blue", theListOfTheLinkedVariety.get(1).data.color);
   }
 
   @Test
   public void testThree() {
-    assertEquals("green", theListOfTheLinkedVariety.get(2).color);
+    assertEquals("green", theListOfTheLinkedVariety.get(2).data.color);
+  }
+
+  @Test
+  public void getOneThenNext() {
+    assertEquals("blue", theListOfTheLinkedVariety.get(0).next.data.color);
+  }
+
+  @Test
+  public void getOneThenNextNext() {
+    assertEquals("green", theListOfTheLinkedVariety.get(0).next.next.data.color);
   }
 }

@@ -8,6 +8,7 @@ public class LinkedList {
     this.head = null;
   }
 
+  // Function to add Chainlink to the end of the linked list
   public void append(ChainLink data)
   {
     Node newNode = new Node(data);
@@ -26,7 +27,8 @@ public class LinkedList {
     }
   }
 
-  public ChainLink get(int i)
+  // Retrieves the data at a given linked list index
+  public Node get(int i)
   {
     if(i < 0)
     {
@@ -40,7 +42,7 @@ public class LinkedList {
     {
       if(count == i)
       {
-        return current.data;
+        return current;
       }
       current = current.next;
       count++;
