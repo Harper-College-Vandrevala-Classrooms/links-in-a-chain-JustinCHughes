@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.csc.TestLinkedList" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-17T23:35:59" hostname="DESKTOP-BA9STQJ" time="0.015">
+  <properties/>
+  <testcase name="testOne()" classname="com.csc.TestLinkedList" time="0.013"/>
+  <testcase name="testTwo()" classname="com.csc.TestLinkedList" time="0.001"/>
+  <testcase name="testThree()" classname="com.csc.TestLinkedList" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

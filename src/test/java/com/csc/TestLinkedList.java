@@ -6,14 +6,15 @@ import org.junit.jupiter.api.Test;
 
 public class TestLinkedList {
 
+  LinkedList theListOfTheLinkedVariety;
 
   @BeforeEach
   void setUp() {
+    theListOfTheLinkedVariety = new LinkedList();
+
     ChainLink linkOne = new ChainLink("red");
     ChainLink linkTwo = new ChainLink("blue");
     ChainLink linkThree = new ChainLink("green");
-
-    LinkedList theListOfTheLinkedVariety = new LinkedList();
 
     theListOfTheLinkedVariety.append(linkOne);
     theListOfTheLinkedVariety.append(linkTwo);
@@ -27,11 +28,11 @@ public class TestLinkedList {
 
   @Test
   public void testTwo() {
-    assertEquals("blue", theListOfTheLinkedVariety.get(0).color);
+    assertEquals("blue", theListOfTheLinkedVariety.get(1).color);
   }
 
   @Test
   public void testThree() {
-    assertEquals("green", theListOfTheLinkedVariety.get(0).color);
+    assertEquals("green", theListOfTheLinkedVariety.get(2).color);
   }
 }
